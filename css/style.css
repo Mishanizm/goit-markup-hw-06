@@ -603,6 +603,16 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+  padding: 8px 16px;
+}
+.footer-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 .subscribe-btn {
   font-size: 16px;
@@ -615,13 +625,17 @@ img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 12px 24px;
+  padding: 8px 24px;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
+  border-color: transparent;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-icon {
+  margin-left: 16px;
 }
 
 /* ------modal----- */
@@ -783,7 +797,7 @@ img {
 }
 
 .modal-send-btn:hover,
-.modal-send-btn:hover {
+.modal-send-btn:focus {
   background: #404bbf;
   color: #ffffff;
 }
