@@ -429,8 +429,6 @@ img {
   margin-right: 80px;
 }
 .footer-text {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -531,117 +529,6 @@ img {
 .subscribe-icon {
   margin-left: 16px;
 }
-
-/* -----------Portfolio---------- */
-
-.portfolio-section {
-  padding: 96px 0 120px;
-}
-.menu-portfolio {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  margin-bottom: 72px;
-}
-.button-portfolio {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #4d5ae5;
-  background-color: #f4f4fd;
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 24px;
-  border: 1px solid #e7e9fc;
-  border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-portfolio:hover,
-.button-portfolio:focus {
-  color: #ffffff;
-  background-color: #404bbf;
-  border: 1px solid transparent;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-/* -----------services---------- */
-
-.services {
-  display: block;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-}
-.servis-portfolio {
-  position: relative;
-  width: calc((100% - 48px) / 3);
-}
-
-.image-link {
-  display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.image-link:hover .portfolio-cover-text,
-.image-link:focus .portfolio-cover-text {
-  transform: translateY(0%);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.portfolio-cover-wrap {
-  position: relative;
-  overflow: hidden;
-}
-.portfolio-cover-text {
-  position: absolute;
-  top: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
-  padding: 40px 32px;
-  background-color: #4d5ae5;
-  height: 100%;
-  transform: translatey(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.tools {
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: none;
-}
-
-.services-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
-}
-
-.services-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-
 /* ---------------modal---------------- */
 
 .overlay {
@@ -671,7 +558,7 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
 }
 .overlay.is-hidden .modal {
   transform: translate(-50%, -50%) scalex(0);
@@ -705,18 +592,6 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.policy-note {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-}
-
-.privacy-policy {
-  text-decoration: underline;
-  color: #4d5ae5;
-}
 /* --------------modal input--------- */
 
 .modal-title {
@@ -726,7 +601,6 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 57px;
   margin-bottom: 16px;
 }
 .input-field {
@@ -767,14 +641,11 @@ img {
 .input-label {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
-}
-.input-label {
   display: block;
-  margin-bottom: 5px;
 }
 
 .modal-comment {
@@ -846,4 +717,113 @@ img {
 .modal-send-btn:focus {
   background: #404bbf;
   color: #ffffff;
+}
+
+/* -----------Portfolio---------- */
+
+.portfolio-section {
+  padding: 96px 0 120px;
+}
+.menu-portfolio {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+.button-portfolio {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+  background-color: #f4f4fd;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+  color: #ffffff;
+  background-color: #404bbf;
+  border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* -----------Portfolio Services---------- */
+
+.services {
+  display: block;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.servis-portfolio {
+  position: relative;
+  width: calc((100% - 48px) / 3);
+}
+
+.image-link {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.image-link:hover .portfolio-cover-text,
+.image-link:focus .portfolio-cover-text {
+  transform: translateY(0%);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-cover-text {
+  position: absolute;
+  top: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  transform: translatey(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tools {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.services-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.services-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
